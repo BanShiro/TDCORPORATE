@@ -5,13 +5,42 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
         {% block stylesheets %}
+            <style>
+                :root{
+                    --acceuil-header-bg: url("{{ asset('images/homepage.png')}}");
+                    --bottom-banner: url("{{asset('images/bottom_banner.jpg')}}");
+                    --top-banner: url("{{asset('images/banner_top.jpg')}}");
+                }
+            </style>
         {% endblock %}
 
         {% block javascripts %}
-{% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
+    <header class="header">
+        
+        
+            <nav>
+                <a href=""><img class="header__logo" src="{{asset('images/logo-white.png')}}"></a>
+                <ul>
+                    <li><a href="{{ path('app_acceuil') }}">Acceuil</a></li>
+                    <li><a href="{{ path('app_apropos') }}">A propos</a></li>
+                    <li><a href="{{ path('app_services') }}">Service</a></li>
+                    <li><a href="{{ path('app_contact') }}">Nous contacter</a></li>
+                </ul>
+            </nav>
+    </header>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        
+        {% endblock %}
     </body>
+    <footer>
+        <ul>
+            <li><img  src="{{asset('images/facebook.svg')}}"> <a href="">Notre page facebook</a></li>
+            <li><img  src="{{asset('images/linkedin.svg')}}"> <a href="">Notre linkedin</a></li>
+            <li><img  src="{{asset('images/email.svg')}}"> <a href="">Nous contacter</a></li>
+            </ul>
+    </footer>
 </html>

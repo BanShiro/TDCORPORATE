@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <div class="service">
+        <div class="service__top"></div>
+        <div class="service__intro">
+            <h1>Nos Service</h1>
+            <p>Chez NéoDesign Architecture, nous sommes passionnés par la création d'espaces innovants</p>
+            <p>et durables qui repoussent les limites de l'architecture traditionnelle</p>
+            <p>Nous offrons une gamme complète de services pour répondre aux besoins variés de nos clients,</p>
+            <p>en combinant expertise technique, créativité et engagement envers la durabilité.</p>
+            <p>Découvrez comment nous pouvons vous aider à concrétiser vos projets architecturaux avec succès :</p>
+        </div>
+        <div class="service__conception">
+            <h2>1. Conception Architecturale</h2>
+            <p>Notre équipe de concepteurs talentueux travaille en étroite collaboration avec nos clients pour donner vie à leurs visions architecturales. </p>
+            <p>Que vous recherchiez une résidence privée unique,un espace commercial innovant ou une infrastructure publique emblématique,</p>
+            <p>nous sommes là pour vous guider à chaque étape du processus de conception.</p>
+            <p>Notre approche centrée sur le client garantit que chaque projet est conçu sur mesure </p>
+            <p>pour répondre à vos besoins spécifiques et à vos aspirations esthétiques.</p>
+            <div class="service__conception__images">
+                <img src="{{asset('images/img-gallery-2.jpg')}}" >
+                <img src="{{asset('images/img-gallery-3.jpg')}}" >
+            </div>
+        </div>
+
+        <div class="service__durability">
+            <h2 class=""> 2. Consultation en Durabilité </h2>
+            <p>La durabilité est au cœur de notre approche de conception chez NéoDesign Architecture. </p>
+            <p>Notre équipe de consultants en durabilité travaille avec vous pour intégrer des pratiques durables dans tous les aspects de votre projet,</p>
+            <p>de la sélection des matériaux à la gestion des déchets en passant par l'optimisation de l'efficacité énergétique.</p>
+            <p>Ensemble, nous pouvons créer des bâtiments qui non seulement minimisent leur impact sur l'environnement,</p>
+            <p>mais qui offrent également des espaces de vie et de travail sains et inspirants pour les occupants.</p>
+
+        </div>
+
+        <div class="service__model">
+            <h2 class=""> 3. Modélisation 3D Avancée </h2>
+            <p>La modélisation 3D est un outil puissant pour visualiser et comprendre les projets architecturaux avant même le début de la construction.</p>
+            <p>Chez NéoDesign Architecture, nous utilisons des logiciels de pointe pour créer des modèles 3D précis de nos conceptions,</p>
+            <p>permettant à nos clients de mieux comprendre l'apparence et la fonctionnalité de leur projet. </p>
+            <p>Que vous soyez un client privé ou un développeur immobilier, notre modélisation 3D avancée vous offre une vision claire de votre projet,</p>
+            <p>vous permettant de prendre des décisions éclairées à chaque étape du processus.</p>
+        </div>
+
+        <div class="service__project">
+            <h2 class=""> 4. Gestion de Projet </h2>  
+            <p>La gestion de projet est essentielle pour garantir le succès de tout projet de construction.</p>
+            <p>Chez NéoDesign Architecture, nous assumons la responsabilité de la gestion complète de votre projet,</p>
+            <p>de la planification initiale à la supervision de la construction.</p>
+            <p>Notre équipe expérimentée assure une coordination efficace entre tous les intervenants,</p>
+            <p>garantissant que votre projet est livré à temps, dans les limites du budget et conforme à vos attentes les plus élevées.</p>
+        </div>
+        <div class="service__bottom"></div>
+    </div>
+{% endblock %}
+

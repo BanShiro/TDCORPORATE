@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+body {
+    background-color: #DBDBDB;
+}
+h1{
+    color:#a4b527;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+footer{
+    background-color: #626262;
+    color: white;
+    display: flex;
+    
+    width: 100%;
+    
+    ul{
+        justify-content: space-around;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+.header{
+    background-color: #626262;
+    width: 100%;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        img{
+            width: 13rem;
+        }
+        ul{
+            width: 65%;
+            display: flex;
+            gap: 20px;
+            li a{
+                font-family: "Open Sans";
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
+a{
+    color: white;
+}
+.acceuil{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    
+    &__content1{
+        color: white;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-weight: 500;
+        width: 100%;
+    }
+    &__top{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: var(--acceuil-header-bg);
+        background-attachment: fixed;
+    }
+}
+.about{
+    background-color: #DBDBDB;
+    &__story{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-weight: 500;
+        &__joinus{
+            font-weight: 700;
+            font-size: medium;
+        }
+    }
+    &__top{
+
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-image: var(--top-banner);
+        background-attachment: fixed;
+    }
+    &__bottom{
+
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: var(--bottom-banner);
+        background-attachment: fixed;
+    }
+}
+h2{
+    color:#a4b527;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+.service{
+    background-color: #DBDBDB;
+    &__intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-weight: 500;
+    }
+    &__conception{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-weight: 500;
+    }
+    &__durability{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-weight: 500;
+    }
+    &__model{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-weight: 500;
+    }
+    &__project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-weight: 500;
+    }
+    &__top{
+
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-image: var(--top-banner);
+        background-attachment: fixed;
+    }
+    &__bottom{
+
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: var(--bottom-banner);
+        background-attachment: fixed;
+    }
+}
+.contact{
+    background-color: #DBDBDB;
+    &__story{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        font-weight: 500;
+        &__joinus{
+            font-weight: 700;
+            font-size: medium;
+        }
+    }
+    &__form{
+        &__title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            font-weight: 500;
+        }
+    }
+    &__top{
+
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-image: var(--top-banner);
+        background-attachment: fixed;
+    }
+    &__bottom{
+
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: var(--bottom-banner);
+        background-attachment: fixed;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 150px;
+    }
+    input[type="submit"] {
+        background-color: #626262;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #a4b527;
+    }
+}
